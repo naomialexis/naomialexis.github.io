@@ -1,0 +1,137 @@
+/* ================================
+   NAOMI ALEXIS — Page de liens
+   Orbitron (titres) + Space Grotesk (corps)
+   Style dark / glassmorphism
+   ================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(Portfolio/images/nmc\ BG.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0f0f1a;
+
+  color: #c8c8e8;
+  font-family: 'Space Grotesk', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.avatar {
+  width: 240px;
+  height: 180px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(200, 160, 80, 0.35));
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #e8e8f8;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+  text-shadow: 0 0 28px rgba(127, 119, 221, 0.45);
+}
+
+.tagline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  color: #8a8aaa;
+  letter-spacing: 0.04em;
+  margin-bottom: 28px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: rgba(15, 15, 30, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #d0d0f0;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.link-btn:hover {
+  background: rgba(127, 119, 221, 0.18);
+  border-color: rgba(127, 119, 221, 0.5);
+  transform: translateY(-2px);
+}
+
+.link-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(127, 119, 221, 0.12);
+  border: 0.5px solid rgba(127, 119, 221, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #AFA9EC;
+}
+
+.link-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.link-label {
+  flex: 1;
+  text-align: left;
+}
+
+.link-arrow {
+  font-size: 12px;
+  color: #6a6a9a;
+}
+
+hr {
+  border: none;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.07);
+  margin: 24px 0 14px;
+}
+
+.footer {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 17px; }
+  .avatar { width: 180px; height: 135px; }
+  .link-btn { font-size: 13px; padding: 11px 14px; }
+}
